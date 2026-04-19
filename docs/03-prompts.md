@@ -90,5 +90,5 @@ Quer entender algum produto específico?
 
 - Reforcei várias vezes que o agente não recomenda investimentos, apenas explica.
 - Mantive o tom simples e direto, alinhado ao estilo do PlanFi.
-- Os exemplos foram adaptados para usar dados do cliente, como você pediu.
+- Os exemplos foram adaptados para usar dados do cliente, porém ele não identificou o cliente especificamente para poder fazer essa analise.o copilot cita as planilhas como arquivos durante a conversa.
 - Edge cases foram escritos para evitar que o modelo saia do escopo.
