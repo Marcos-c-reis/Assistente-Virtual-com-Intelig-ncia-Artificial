@@ -1,0 +1,6 @@
+id,usuario_id,objetivo,valor_total,valor_mensal_sugerido,prazo_meses
+1,1,Reserva de emergencia,12000,666,18
+2,1,Viagem,5000,416,12
+3,2,Quitar dividas,8000,800,10
+4,3,Comprar carro,30000,833,36
+5,3,Curso,2000,500,4
