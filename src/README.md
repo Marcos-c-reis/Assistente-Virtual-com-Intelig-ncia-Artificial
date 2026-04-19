@@ -8,7 +8,7 @@
 ollama pull qwen3.5:4b
 
 # 3. Testar se funciona
-ollama run gpt-oss "Olá!"
+ollama run qwen3.5:4b "Olá!"
 ```
 
 ## Código Completo
