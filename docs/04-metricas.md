@@ -1,16 +1,6 @@
 # Avaliação e Métricas
 
-> [!TIP]
-> **Prompt usado para esta etapa:**
-> 
-> Crie um plano de avaliação pro agente "Edu" com 3 métricas: assertividade, segurança e coerência. Inclua 4 cenários de teste e um formulário simples de feedback. Preencha o template abaixo.
->
-> [cole ou anexe o template `04-metricas.md` pra contexto]
-
-
 ## Como Avaliar seu Agente
-
-A avaliação pode ser feita de duas formas complementares:
 
 1. **Testes estruturados:** Você define perguntas e respostas esperadas;
 2. **Feedback real:** Pessoas testam o agente e dão notas.
@@ -21,36 +11,38 @@ A avaliação pode ser feita de duas formas complementares:
 
 | Métrica | O que avalia | Exemplo de teste |
 |---------|--------------|------------------|
-| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o saldo e receber o valor correto |
+| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o perfil financeiro e receber o perfil correto |
 | **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
-| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
+| **Coerência** | A resposta faz sentido para o perfil do cliente? | Recomendar produto compatível com o perfil financeiro |
 
-> [!TIP]
-> Peça para 3-5 pessoas (amigos, família, colegas) testarem seu agente e avaliarem cada métrica com notas de 1 a 5. Isso torna suas métricas mais confiáveis! Caso use os arquivos da pasta `data`, lembre-se de contextualizar os participantes sobre o **cliente fictício** representado nesses dados.
 
 ---
 
 ## Exemplos de Cenários de Teste
 
-Crie testes simples para validar seu agente:
-
 ### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** R$570,00 (baseado no `transacoes.csv`)
+- **Pergunta:** "Qual é o meu perfil financeiro?"
+- **Resposta esperada:** O PlanFi deve identificar corretamente um dos perfis do arquivo perfil_financeiro.json (Gastador, Equilibrado ou Planejador).
 - **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
+- **Pergunta:** Qual investimento você recomenda para alguém com perfil conservador?"
+- **Resposta esperada:** Um produto de renda fixa e risco baixo, como:
+>Tesouro Selic
+>CDB Liquidez Diária
+>LCI/LCA
+(dados de produtos_financeiros.json)
+
 - **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
+- **Pergunta:** "Qual é o valor estimado para fazer uma viagem?"
+- **Resposta esperada:** R$ 5.000,00
+(dado do arquivo objetivos_financeiros.csv)
 - **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto BBDC3 na Bovespa?"
+- **Pergunta:** "Quem ganhou o campeonato brasileiro?"
 - **Resposta esperada:** Agente admite não ter essa informação
 - **Resultado:** [X] Correto  [ ] Incorreto
 
@@ -58,24 +50,29 @@ Crie testes simples para validar seu agente:
 
 ## Formulário de Feedback (Sugestão)
 
-Use com os participantes do teste:
 
 | Métrica | Pergunta | Nota (1-5) |
 |---------|----------|------------|
-| Assertividade | "As respostas responderam suas perguntas?" | ___ |
-| Segurança | "As informações pareceram confiáveis?" | ___ |
-| Coerência | "A linguagem foi clara e fácil de entender?" | ___ |
+| Assertividade | "As respostas responderam suas perguntas?" | 3 |
+| Segurança | "As informações pareceram confiáveis?" | 4 |
+| Coerência | "A linguagem foi clara e fácil de entender?" | 3 |
 
 **Comentário aberto:** O que você achou desta experiência e o que poderia melhorar?
 
----
+
+Acho que com uma base maior de dados de movimentação e objetivos, talvez troucesse respostas mais acertivas
+
 
 ## Resultados
 
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- [Liste aqui]
+- Questões técnicas respondidas com exatidão;
+- Cordialidade nas respostas;
+- Sem julgamentos sobre a condição atual do cliente;
 
 **O que pode melhorar:**
-- [Liste aqui]
+- Por rodar local, o tempo de resposta foi muito elevado;
+- Respostas ainda muito genéricas principalmente quando questões personalizadas;
+
