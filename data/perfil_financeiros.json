@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "perfil": "Gastador",
+    "descricao": "Pessoa que tende a gastar mais do que deveria e tem dificuldade em manter controle financeiro.",
+    "caracteristicas": [
+      "Compra por impulso",
+      "Pouco controle de gastos mensais",
+      "Dificuldade em manter metas financeiras",
+      "Foco no curto prazo"
+    ],
+    "desafios": [
+      "Criar hábitos de organização",
+      "Evitar gastos desnecessários",
+      "Construir reserva de emergência"
+    ],
+    "pontos_fortes": [
+      "Aproveita oportunidades",
+      "Flexível com mudanças",
+      "Boa capacidade de adaptação"
+    ]
+  },
+  {
+    "id": 2,
+    "perfil": "Equilibrado",
+    "descricao": "Pessoa que tenta manter um meio-termo entre gastar e poupar, mas ainda pode melhorar o planejamento.",
+    "caracteristicas": [
+      "Controla parte dos gastos",
+      "Consegue guardar algum dinheiro",
+      "Tem metas mas nem sempre acompanha",
+      "Busca melhorar a organização"
+    ],
+    "desafios": [
+      "Criar consistência no planejamento",
+      "Acompanhar metas com mais frequência",
+      "Evitar deslizes mensais"
+    ],
+    "pontos_fortes": [
+      "Boa noção financeira",
+      "Aberto a aprender",
+      "Consegue se adaptar a rotinas"
+    ]
+  },
+  {
+    "id": 3,
+    "perfil": "Planejador",
+    "descricao": "Pessoa organizada que acompanha metas, controla gastos e pensa no longo prazo.",
+    "caracteristicas": [
+      "Acompanha orçamento mensal",
+      "Define metas claras",
+      "Tem reserva de emergência",
+      "Pensa no longo prazo"
+    ],
+    "desafios": [
+      "Evitar excesso de rigidez",
+      "Manter equilíbrio entre planejamento e lazer",
+      "Atualizar metas conforme mudanças de vida"
+    ],
+    "pontos_fortes": [
+      "Alta disciplina",
+      "Boa visão de futuro",
+      "Organização consistente"
+    ]
+  }
+]
